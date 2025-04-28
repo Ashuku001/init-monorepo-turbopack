@@ -1,0 +1,25 @@
+{
+    "name": "@repo/types",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "build": "tsc ",
+        "lint": "eslint . --max-warnings 0",
+        "dev": "tsc -w"
+    },
+    "exports": {
+        ".": {
+            "types": "./src/index.ts",
+            "default": "./dist/index.js"
+        }
+    },
+    "devDependencies": {
+        "@repo/eslint-config": "workspace:*",
+        "@repo/typescript-config": "workspace:*",
+        "@types/node": "^22.10.7",
+        "@types/eslint": "^8.38.0",
+        "eslint": "^9.25.0",
+        "typescript": "^5.8.2"
+
+    }
+}
